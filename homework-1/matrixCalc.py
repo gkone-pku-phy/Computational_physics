@@ -97,4 +97,9 @@ class SquareMatrix:
                 print("%.8f"%self._matrix[i][j],'\t\t',end='')
             print()
         
-                
+if __name__=="__main__":
+    mat=[[3,7.02532750087234],[4.683551667248227,12.125732532083186]]
+    b=[2.2826672775201238,2.2826672775201238]
+    m=SquareMatrix(mat)
+    m=m.Cholesky()
+    m.show()
